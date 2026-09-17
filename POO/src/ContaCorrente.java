@@ -12,6 +12,7 @@ public class ContaCorrente extends Conta{
         System.out.println("== Numero: "+this.getNumero());
         System.out.println("== Agência: "+this.getAgencia());
         System.out.println("== Saldo: "+this.getSaldo());
+        System.out.println("== Estado da conta: "+this.isAtiva());
         System.out.println("=================================================");
     }
 }

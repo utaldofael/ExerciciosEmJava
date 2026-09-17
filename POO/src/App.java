@@ -5,7 +5,6 @@ public class App {
         c1.setTitular("Raphael");
 
         ContaCorrente cc1 = new ContaCorrente(4321, 6666, "Juninho");
-
         cc1.exibirInfo();
     }
 }

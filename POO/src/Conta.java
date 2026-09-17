@@ -10,6 +10,7 @@ public class Conta {
         this.agencia = agencia;
         this.titular = titular;
         this.saldo = 500;
+        this.ativa = true;
         System.out.println("Conta ativa com sucesso! Conta possue R$"+this.saldo+" no momento.");
       }
 
@@ -20,6 +21,7 @@ public class Conta {
         System.out.println("== Numero: "+this.numero);
         System.out.println("== Agência: "+this.agencia);
         System.out.println("== Saldo: "+this.saldo);
+        System.out.println("== Estado da conta: "+this.ativa);
         System.out.println("========================================");
     }
 
@@ -57,5 +59,13 @@ public class Conta {
         } else {
             this.titular = titular;
         }
+    }
+
+    public boolean isAtiva() {
+        return ativa;
+    }
+
+    public void setAtiva(boolean ativa) {
+        this.ativa = ativa;
     }
 }
